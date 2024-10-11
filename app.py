@@ -49,7 +49,7 @@ def submit_form():
     # Calculate the privilege score
     privilege_percentage = calculate_privilege(user_input)
     
-    return f'Your privilege score is: {privilege_percentage:.2f}%'
+    return f'Your privilege score is: {privilege_percentage:.2f}'
 
 if __name__ == '__main__':
     app.run(debug=True)

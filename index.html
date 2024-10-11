@@ -2,154 +2,173 @@
 <html>
 <head>
     <title>Privilege Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Academic Privilege Calculator Form</h1>
     <form id="privilege-calculator-form" action="#" onsubmit="updatePrivilege();return false;">
-    	<label for="housing">Housing:</label>
-		<select name="Housing" id="housing">
-			<option value="Owns Property">Owns Property</option>
-			<option value="Renting" selected>Renting</option>
-			<option value="Homeless">Homeless</option>
-		</select>
-		<br>
-    	<label for="current wealth">Current Wealth:</label>
-		<select name="Current Wealth" id="current wealth">
-			<option value="Rich">Rich</option>
-			<option value="Middle Class" selected>Middle Class</option>
-			<option value="Poor">Poor</option>
-		</select>
-		<br>
-    	<label for="language">Language:</label>
-		<select name="Language" id="language">
-			<option value="English">English</option>
-			<option value="Learned English" selected>Learned English</option>
-			<option value="Non-English monolingual">Non-English monolingual</option>
-		</select>
-		<br>
-    	<label for="citizenship">Citizenship:</label>
-		<select name="Citizenship" id="citizenship">
-			<option value="Citizen">Citizen</option>
-			<option value="Documented" selected>Documented</option>
-			<option value="Undocumented">Undocumented</option>
-		</select>
-		<br>
-    	<label for="religion & culture">Religion & Culture:</label>
-		<select name="Religion & Culture" id="religion & culture">
-			<option value="Widely Accepted">Widely Accepted</option>
-			<option value="Mostly Accepted" selected>Mostly Accepted</option>
-			<option value="Not Widely Accepted">Not Widely Accepted</option>
-		</select>
-		<br>
-    	<label for="formal education">Formal Education:</label>
-		<select name="Formal Education" id="formal education">
-			<option value="Degree(s)">Degree(s)</option>
-			<option value="Limited" selected>Limited</option>
-			<option value="None">None</option>
-		</select>
-		<br>
-    	<label for="institution">Institution:</label>
-		<select name="Institution" id="institution">
-			<option value="Research Intensive">Research Intensive</option>
-			<option value="Equal Teaching & Research" selected>Equal Teaching & Research</option>
-			<option value="Teaching Intensive">Teaching Intensive</option>
-		</select>
-		<br>
-    	<label for="funding/resources">Funding/Resources:</label>
-		<select name="Funding/Resources" id="funding/resources">
-			<option value="High">High</option>
-			<option value="Medium" selected>Medium</option>
-			<option value="None / Very Low">None / Very Low</option>
-		</select>
-		<br>
-    	<label for="career stage">Career Stage:</label>
-		<select name="Career Stage" id="career stage">
-			<option value="Late Career">Late Career</option>
-			<option value="Mid Career" selected>Mid Career</option>
-			<option value="Early Career">Early Career</option>
-		</select>
-		<br>
-    	<label for="mental health">Mental Health:</label>
-		<select name="Mental Health" id="mental health">
-			<option value="Robust">Robust</option>
-			<option value="Mostly Stable" selected>Mostly Stable</option>
-			<option value="Vulnerable">Vulnerable</option>
-		</select>
-		<br>
-    	<label for="neuro-diversity">Neuro-diversity:</label>
-		<select name="Neuro-diversity" id="neuro-diversity">
-			<option value="Neuro-typical">Neuro-typical</option>
-			<option value="Some Neuro-divergence" selected>Some Neuro-divergence</option>
-			<option value="Multiply Neuro-divergent">Multiply Neuro-divergent</option>
-		</select>
-		<br>
-    	<label for="body size">Body size:</label>
-		<select name="Body size" id="body size">
-			<option value="Slim">Slim</option>
-			<option value="Average" selected>Average</option>
-			<option value="Large">Large</option>
-		</select>
-		<br>
-    	<label for="(dis)ability">(Dis)ability:</label>
-		<select name="(Dis)ability" id="(dis)ability">
-			<option value="Able-bodied">Able-bodied</option>
-			<option value="Some Disability" selected>Some Disability</option>
-			<option value="Multiply Disabled">Multiply Disabled</option>
-		</select>
-		<br>
-    	<label for="childhood household wealth">Childhood Household Wealth:</label>
-		<select name="Childhood Household Wealth" id="childhood household wealth">
-			<option value="Rich">Rich</option>
-			<option value="Middle Class" selected>Middle Class</option>
-			<option value="Poor">Poor</option>
-		</select>
-		<br>
-    	<label for="childhood household stability">Childhood Household Stability:</label>
-		<select name="Childhood Household Stability" id="childhood household stability">
-			<option value="Stable">Stable</option>
-			<option value="Mostly Stable" selected>Mostly Stable</option>
-			<option value="Unstable">Unstable</option>
-		</select>
-		<br>
-    	<label for="care-giver educational level">Care-Giver Educational Level:</label>
-		<select name="Care-Giver Educational Level" id="care-giver educational level">
-			<option value="Tertiary">Tertiary</option>
-			<option value="Secondary" selected>Secondary</option>
-			<option value="Primary">Primary</option>
-		</select>
-		<br>
-    	<label for="caring duties">Caring Duties:</label>
-		<select name="Caring Duties" id="caring duties">
-			<option value="No Care">No Care</option>
-			<option value="Shared Care" selected>Shared Care</option>
-			<option value="Self Care">Self Care</option>
-		</select>
-		<br>
-    	<label for="gender">Gender:</label>
-		<select name="Gender" id="gender">
-			<option value="Cis-man">Cis-man</option>
-			<option value="Cis-woman" selected>Cis-woman</option>
-			<option value="Trans, Intersex, Non-binary">Trans, Intersex, Non-binary</option>
-		</select>
-		<br>
-    	<label for="sexuality">Sexuality:</label>
-		<select name="Sexuality" id="sexuality">
-			<option value="Hetero-sexual">Hetero-sexual</option>
-			<option value="Gay man" selected>Gay man</option>
-			<option value="Lesbian, Bi, Pan, Asexual">Lesbian, Bi, Pan, Asexual</option>
-		</select>
-		<br>
-    	<label for="skin colour">Skin Colour:</label>
-		<select name="Skin Colour" id="skin colour">
-			<option value="White">White</option>
-			<option value="Various Shades" selected>Various Shades</option>
-			<option value="Dark">Dark</option>
-		</select>
-		<br>
+        <div id="categories">
+            <section>
+                <h2>Living & Culture</h2>
+            	<label for="housing">Housing:</label>
+        		<select name="Housing" id="housing">
+        			<option value="Owns Property">Owns Property</option>
+        			<option value="Renting" selected>Renting</option>
+        			<option value="Homeless">Homeless</option>
+        		</select>
+        		<br>
+            	<label for="current wealth">Current Wealth:</label>
+        		<select name="Current Wealth" id="current wealth">
+        			<option value="Rich">Rich</option>
+        			<option value="Middle Class" selected>Middle Class</option>
+        			<option value="Poor">Poor</option>
+        		</select>
+        		<br>
+            	<label for="language">Language:</label>
+        		<select name="Language" id="language">
+        			<option value="English">English</option>
+        			<option value="Learned English" selected>Learned English</option>
+        			<option value="Non-English monolingual">Non-English monolingual</option>
+        		</select>
+        		<br>
+            	<label for="citizenship">Citizenship:</label>
+        		<select name="Citizenship" id="citizenship">
+        			<option value="Citizen">Citizen</option>
+        			<option value="Documented" selected>Documented</option>
+        			<option value="Undocumented">Undocumented</option>
+        		</select>
+        		<br>
+            	<label for="religion & culture">Religion & Culture:</label>
+        		<select name="Religion & Culture" id="religion & culture">
+        			<option value="Widely Accepted">Widely Accepted</option>
+        			<option value="Mostly Accepted" selected>Mostly Accepted</option>
+        			<option value="Not Widely Accepted">Not Widely Accepted</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Education & Career</h2>
+            	<label for="formal education">Formal Education:</label>
+        		<select name="Formal Education" id="formal education">
+        			<option value="Degree(s)">Degree(s)</option>
+        			<option value="Limited" selected>Limited</option>
+        			<option value="None">None</option>
+        		</select>
+        		<br>
+            	<label for="institution">Institution:</label>
+        		<select name="Institution" id="institution">
+        			<option value="Research Intensive">Research Intensive</option>
+        			<option value="Equal Teaching & Research" selected>Equal Teaching & Research</option>
+        			<option value="Teaching Intensive">Teaching Intensive</option>
+        		</select>
+        		<br>
+            	<label for="funding/resources">Funding/Resources:</label>
+        		<select name="Funding/Resources" id="funding/resources">
+        			<option value="High">High</option>
+        			<option value="Medium" selected>Medium</option>
+        			<option value="None / Very Low">None / Very Low</option>
+        		</select>
+        		<br>
+            	<label for="career stage">Career Stage:</label>
+        		<select name="Career Stage" id="career stage">
+        			<option value="Late Career">Late Career</option>
+        			<option value="Mid Career" selected>Mid Career</option>
+        			<option value="Early Career">Early Career</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Health & Wellbeing</h2>
+            	<label for="mental health">Mental Health:</label>
+        		<select name="Mental Health" id="mental health">
+        			<option value="Robust">Robust</option>
+        			<option value="Mostly Stable" selected>Mostly Stable</option>
+        			<option value="Vulnerable">Vulnerable</option>
+        		</select>
+        		<br>
+            	<label for="neuro-sectionersity">Neuro-sectionersity:</label>
+        		<select name="Neuro-sectionersity" id="neuro-sectionersity">
+        			<option value="Neuro-typical">Neuro-typical</option>
+        			<option value="Some Neuro-sectionergence" selected>Some Neuro-sectionergence</option>
+        			<option value="Multiply Neuro-sectionergent">Multiply Neuro-sectionergent</option>
+        		</select>
+        		<br>
+            	<label for="body size">Body size:</label>
+        		<select name="Body size" id="body size">
+        			<option value="Slim">Slim</option>
+        			<option value="Average" selected>Average</option>
+        			<option value="Large">Large</option>
+        		</select>
+        		<br>
+            	<label for="(dis)ability">(Dis)ability:</label>
+        		<select name="(Dis)ability" id="(dis)ability">
+        			<option value="Able-bodied">Able-bodied</option>
+        			<option value="Some Disability" selected>Some Disability</option>
+        			<option value="Multiply Disabled">Multiply Disabled</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Childhood & Development</h2>
+            	<label for="childhood household wealth">Childhood Household Wealth:</label>
+        		<select name="Childhood Household Wealth" id="childhood household wealth">
+        			<option value="Rich">Rich</option>
+        			<option value="Middle Class" selected>Middle Class</option>
+        			<option value="Poor">Poor</option>
+        		</select>
+        		<br>
+            	<label for="childhood household stability">Childhood Household Stability:</label>
+        		<select name="Childhood Household Stability" id="childhood household stability">
+        			<option value="Stable">Stable</option>
+        			<option value="Mostly Stable" selected>Mostly Stable</option>
+        			<option value="Unstable">Unstable</option>
+        		</select>
+        		<br>
+            	<label for="care-giver educational level">Care-Giver Educational Level:</label>
+        		<select name="Care-Giver Educational Level" id="care-giver educational level">
+        			<option value="Tertiary">Tertiary</option>
+        			<option value="Secondary" selected>Secondary</option>
+        			<option value="Primary">Primary</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Caregiving</h2>
+            	<label for="caring duties">Caring Duties:</label>
+        		<select name="Caring Duties" id="caring duties">
+        			<option value="No Care">No Care</option>
+        			<option value="Shared Care" selected>Shared Care</option>
+        			<option value="Self Care">Self Care</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Gender & Sexuality</h2>
+            	<label for="gender">Gender:</label>
+        		<select name="Gender" id="gender">
+        			<option value="Cis-man">Cis-man</option>
+        			<option value="Cis-woman" selected>Cis-woman</option>
+        			<option value="Trans, Intersex, Non-binary">Trans, Intersex, Non-binary</option>
+        		</select>
+        		<br>
+            	<label for="sexuality">Sexuality:</label>
+        		<select name="Sexuality" id="sexuality">
+        			<option value="Hetero-sexual">Hetero-sexual</option>
+        			<option value="Gay man" selected>Gay man</option>
+        			<option value="Lesbian, Bi, Pan, Asexual">Lesbian, Bi, Pan, Asexual</option>
+        		</select>
+            </section>
+            <section>
+                <h2>Race</h2>
+            	<label for="skin colour">Skin Colour:</label>
+        		<select name="Skin Colour" id="skin colour">
+        			<option value="White">White</option>
+        			<option value="Various Shades" selected>Various Shades</option>
+        			<option value="Dark">Dark</option>
+        		</select>
+            </section>
+        </div>
         <input type="submit" value="Submit">
     </form>
-    <h1 id="privilege-score"></h1>
-    <p>Privilege scores range from -100 to 100 where -100 is more disadvantages than advantages, 100 is more advantages than disadvantages, and 0 is an approximately equal mix of advantages and disadvantages.</p>
+    <section>
+        <h1 id="privilege-score"></h1>
+        <p>Privilege scores range from -100 to 100 where -100 is more disadvantages than advantages, 100 is more advantages than disadvantages, and 0 is an approximately equal mix of advantages and disadvantages.</p>
+    </section>
     <script>
         let weight_assignments = {
             'Housing': {'Owns Property':1, 'Renting':0, 'Homeless':-1},
@@ -162,7 +181,7 @@
             'Funding/Resources': {'High':1,'Medium':0,'None / Very Low':-1},
             'Career Stage': {'Late Career':1,'Mid Career':0,'Early Career':-1},
             'Mental Health': {'Robust':1,'Mostly Stable':0,'Vulnerable':-1},
-            'Neuro-diversity': {'Neuro-typical':1,'Some Neuro-divergence':0,'Multiply Neuro-divergent':-1},
+            'Neuro-sectionersity': {'Neuro-typical':1,'Some Neuro-sectionergence':0,'Multiply Neuro-sectionergent':-1},
             'Body size': {'Slim':1,'Average':0,'Large':-1},
             '(Dis)ability': {'Able-bodied':1,'Some Disability':0,'Multiply Disabled':-1},
             'Childhood Household Wealth': {'Rich':1,'Middle Class':0,'Poor':-1},

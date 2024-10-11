@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privilege Calculator</title>
+</head>
+<body>
+    <h1>Privilege Calculator Form</h1>
+    <form action="/submit" method="POST">
+    	<label for="housing">Housing:</label>
+		<select name="Housing" id="housing">
+			<option value="Owns Property">Owns Property</option>
+			<option value="Renting" selected>Renting</option>
+			<option value="Homeless">Homeless</option>
+		</select>
+		<br>
+    	<label for="current wealth">Current Wealth:</label>
+		<select name="Current Wealth" id="current wealth">
+			<option value="Rich">Rich</option>
+			<option value="Middle Class" selected>Middle Class</option>
+			<option value="Poor">Poor</option>
+		</select>
+		<br>
+    	<label for="language">Language:</label>
+		<select name="Language" id="language">
+			<option value="English">English</option>
+			<option value="Learned English" selected>Learned English</option>
+			<option value="Non-English monolingual">Non-English monolingual</option>
+		</select>
+		<br>
+    	<label for="citizenship">Citizenship:</label>
+		<select name="Citizenship" id="citizenship">
+			<option value="Citizen">Citizen</option>
+			<option value="Documented" selected>Documented</option>
+			<option value="Undocumented">Undocumented</option>
+		</select>
+		<br>
+    	<label for="religion & culture">Religion & Culture:</label>
+		<select name="Religion & Culture" id="religion & culture">
+			<option value="Widely Accepted">Widely Accepted</option>
+			<option value="Mostly Accepted" selected>Mostly Accepted</option>
+			<option value="Not Widely Accepted">Not Widely Accepted</option>
+		</select>
+		<br>
+    	<label for="formal education">Formal Education:</label>
+		<select name="Formal Education" id="formal education">
+			<option value="Degree(s)">Degree(s)</option>
+			<option value="Limited" selected>Limited</option>
+			<option value="None">None</option>
+		</select>
+		<br>
+    	<label for="institution">Institution:</label>
+		<select name="Institution" id="institution">
+			<option value="Research Intensive">Research Intensive</option>
+			<option value="Equal Teaching & Research" selected>Equal Teaching & Research</option>
+			<option value="Teaching Intensive">Teaching Intensive</option>
+		</select>
+		<br>
+    	<label for="funding/resources">Funding/Resources:</label>
+		<select name="Funding/Resources" id="funding/resources">
+			<option value="High">High</option>
+			<option value="Medium" selected>Medium</option>
+			<option value="None / Very Low">None / Very Low</option>
+		</select>
+		<br>
+    	<label for="career stage">Career Stage:</label>
+		<select name="Career Stage" id="career stage">
+			<option value="Late Career">Late Career</option>
+			<option value="Mid Career" selected>Mid Career</option>
+			<option value="Early Career">Early Career</option>
+		</select>
+		<br>
+    	<label for="mental health">Mental Health:</label>
+		<select name="Mental Health" id="mental health">
+			<option value="Robust">Robust</option>
+			<option value="Mostly Stable" selected>Mostly Stable</option>
+			<option value="Vulnerable">Vulnerable</option>
+		</select>
+		<br>
+    	<label for="neuro-diversity">Neuro-diversity:</label>
+		<select name="Neuro-diversity" id="neuro-diversity">
+			<option value="Neuro-typical">Neuro-typical</option>
+			<option value="Some Neuro-divergence" selected>Some Neuro-divergence</option>
+			<option value="Multiply Neuro-divergent">Multiply Neuro-divergent</option>
+		</select>
+		<br>
+    	<label for="body size">Body size:</label>
+		<select name="Body size" id="body size">
+			<option value="Slim">Slim</option>
+			<option value="Average" selected>Average</option>
+			<option value="Large">Large</option>
+		</select>
+		<br>
+    	<label for="(dis)ability">(Dis)ability:</label>
+		<select name="(Dis)ability" id="(dis)ability">
+			<option value="Able-bodied">Able-bodied</option>
+			<option value="Some Disability" selected>Some Disability</option>
+			<option value="Multiply Disabled">Multiply Disabled</option>
+		</select>
+		<br>
+    	<label for="childhood household wealth">Childhood Household Wealth:</label>
+		<select name="Childhood Household Wealth" id="childhood household wealth">
+			<option value="Rich">Rich</option>
+			<option value="Middle Class" selected>Middle Class</option>
+			<option value="Poor">Poor</option>
+		</select>
+		<br>
+    	<label for="childhood household stability">Childhood Household Stability:</label>
+		<select name="Childhood Household Stability" id="childhood household stability">
+			<option value="Stable">Stable</option>
+			<option value="Mostly Stable" selected>Mostly Stable</option>
+			<option value="Unstable">Unstable</option>
+		</select>
+		<br>
+    	<label for="care-giver educational level">Care-Giver Educational Level:</label>
+		<select name="Care-Giver Educational Level" id="care-giver educational level">
+			<option value="Tertiary">Tertiary</option>
+			<option value="Secondary" selected>Secondary</option>
+			<option value="Primary">Primary</option>
+		</select>
+		<br>
+    	<label for="caring duties">Caring Duties:</label>
+		<select name="Caring Duties" id="caring duties">
+			<option value="No Care">No Care</option>
+			<option value="Shared Care" selected>Shared Care</option>
+			<option value="Self Care">Self Care</option>
+		</select>
+		<br>
+    	<label for="gender">Gender:</label>
+		<select name="Gender" id="gender">
+			<option value="Cis-man">Cis-man</option>
+			<option value="Cis-woman" selected>Cis-woman</option>
+			<option value="Trans, Intersex, Non-binary">Trans, Intersex, Non-binary</option>
+		</select>
+		<br>
+    	<label for="sexuality">Sexuality:</label>
+		<select name="Sexuality" id="sexuality">
+			<option value="Hetero-sexual">Hetero-sexual</option>
+			<option value="Gay man" selected>Gay man</option>
+			<option value="Lesbian, Bi, Pan, Asexual">Lesbian, Bi, Pan, Asexual</option>
+		</select>
+		<br>
+    	<label for="skin colour">Skin Colour:</label>
+		<select name="Skin Colour" id="skin colour">
+			<option value="White">White</option>
+			<option value="Various Shades" selected>Various Shades</option>
+			<option value="Dark">Dark</option>
+		</select>
+		<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
